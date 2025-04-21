@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import GitHubUsers from "./pages/GitHubUsers";
+import UserDetails from "./pages/UserDetails";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/github-users" element={<GitHubUsers/>} />
+        <Route path="/github-users/:username" element={<UserDetails/>} />
       </Routes>
     </>
   );

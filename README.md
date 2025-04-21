@@ -1,13 +1,49 @@
-# React + Vite
+# GitHub Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite web app to search for GitHub users and view detailed profile information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search GitHub Users:**
+  - Enter a username query to search for GitHub users.
+  - Displays a list of matching users with avatars and usernames.
+- **User Details:**
+  - Click on a username to view detailed information, including:
+    - Full name (if available)
+    - Bio
+    - Public repositories count
+    - Followers & Following
+    - Direct link to the GitHub profile
+- **Navigation:**
+  - Simple navigation bar with Home, About, Contact, and GitHub Users pages.
+- **Responsive & Modern UI:**
+  - Built with Tailwind CSS for a clean, responsive design.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# gitHub_Finder
+### Prerequisites
+- Node.js (v16 or newer recommended)
+- npm
+
+### Setup
+```bash
+npm install
+```
+
+### Running the App
+```bash
+npm run dev
+```
+Visit [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Project Structure
+- `src/pages/GitHubUsers.jsx` — Search and list GitHub users
+- `src/pages/UserDetails.jsx` — Detailed information for a selected user
+- `src/components/NavBar.jsx` — Navigation bar
+- `src/App.jsx` — App routes
+
+## API
+- Uses the [GitHub REST API](https://docs.github.com/en/rest) for user search and profile details.
+
+## License
+MIT

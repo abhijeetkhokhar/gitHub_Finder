@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function GitHubUsers() {
@@ -59,14 +60,12 @@ function GitHubUsers() {
                 alt={user.login}
                 className="w-10 h-10 rounded-full"
               />
-              <a
-                href={user.html_url}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                to={`/github-users/${user.login}`}
                 className="text-blue-700 font-medium hover:underline"
               >
                 {user.login}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
